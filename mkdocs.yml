@@ -1,0 +1,115 @@
+site_name: 'Grafite Inc Packages'
+site_author: Matt Lantz
+
+# Repository
+repo_name: 'Grafite Documentation'
+repo_url: 'https://github.com/GrafiteInc/docs'
+
+# Copyright
+copyright: 'Copyright (c) Grafite Inc'
+
+# Documentation and theme
+docs_dir: 'markdown'
+theme:
+  name: 'material'
+  palette:
+    primary: 'green'
+    accent: 'grey'
+  feature:
+    tabs: true
+  logo: 'img/logo.png'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+extra:
+  social:
+    - type: github-alt
+      link: https://github.com/GrafiteInc
+    - type: twitter
+      link: https://twitter.com/GrafiteInc
+
+# Google Analytics
+google_analytics:
+  - 'UA-116233000-1'
+  - 'auto'
+
+extra_css: [ 'css/extra.css', 'css/ekko-lightbox.css' ]
+extra_javascript: [ 'js/jquery.js', 'js/ekko-lightbox.js' ]
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+pages:
+  - Grafite: index.md
+  - FAQ: faq.md
+  - Contributing: contributing.md
+  - Upgrade Guide: upgrade_guide.md
+  - Release Notes: release_notes.md
+  - Screenshots: screenshots.md
+  - License: license.md
+  - Builder:
+    - Getting Started: builder/getting_started.md
+    - Starter: builder/starter.md
+    - Bootstrap UI: builder/bootstrap.md
+    - Activity: builder/activity.md
+    - API: builder/Api.md
+    - Billing: builder/billing.md
+    - Features: builder/features.md
+    - Logs: builder/logs.md
+    - Notifications: builder/notifications.md
+    - Socialite: builder/socialite.md
+  - CMS:
+    - Getting Started: cms/index.md
+    - Config: cms/config.md
+    - API: cms/api.md
+    - Multilingual: cms/multilingual.md
+    - Upgrade Guide: cms/upgrade.md
+    - Modules:
+      - Introduction: cms/modules/index.md
+      - Assets: cms/modules/assets.md
+      - Composer: cms/modules/composer.md
+      - Config: cms/modules/config.md
+      - CRUD: cms/modules/crud.md
+      - File and Images: cms/modules/files_and_images.md
+      - Generator: cms/modules/make.md
+    - Themes:
+      - Introduction: cms/themes/index.md
+      - Generator: cms/themes/generator.md
+      - Blade: cms/themes/blade.md
+      - Pages and Blocks: cms/themes/pages_and_blocks.md
+      - Publishing: cms/themes/publishing.md
+  # - Commerce:
+  #   - Getting Started: commerce/index.md
+  # - CLI:
+  #   - Getting Started: cli/index.md
+  - Others:
+    - CRUD Maker: others/crud.md
+    - Crypto: others/crypto.md
+    - Form Maker: others/form_maker.md
+    - Input Maker: others/input_maker.md
+    - HomeForge: others/homeforge.md
+
