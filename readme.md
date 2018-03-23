@@ -1,6 +1,17 @@
-# Laracogs Documentation
+# Grafite Documentation
 
-This is the Laracogs documentation repository. It uses Mkdocs.
+This is the Grafite package documentation repository. It uses Mkdocs.
+
+## Packages
+
+- Builder
+- CMS
+- Commerce (in progress)
+- CLI (in progress)
+- CrudMaker
+- FormMaker
+- HomeForge
+- Crypto
 
 ## Install
 
