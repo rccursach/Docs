@@ -10,7 +10,7 @@ copyright: 'Copyright (c) Grafite Inc'
 
 # Documentation and theme
 docs_dir: 'markdown'
-site_dir: '../websites/docs'
+site_dir: '../websites/docs.grafite.ca'
 theme:
   name: 'material'
   palette:
