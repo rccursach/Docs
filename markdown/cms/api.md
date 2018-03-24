@@ -4,7 +4,7 @@ Grafite's CMS API is very simple, and it has a VERY simple auth system using a s
 The general base route for all API requests is:
 
 ```
-/cms/api/{resource-url}?token={QUARX_API_TOKEN}
+/cms/api/{resource-url}?token={CMS_API_TOKEN}
 ```
 
 | URL | Resource |

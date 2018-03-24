@@ -21,7 +21,7 @@ Grafite CMS has a rather elaborate config with many options available. You can e
 | preview-image-size | When uploading images we cache clones at a smaller size (default: 800) |
 | backend-title | A title for the CMS (default: cms) |
 | backend-route-prefix | The route prefix for the backend of the CMS (default: cms) |
-| backend-theme | Theme for the backend |
+| backend-theme | Theme for the backend (standard|dark) |
 | registration-available | Enable or disable registration |
 | pagination | Results per pack in backend |
 | api-key | Api Key for the Redactor photo and file injection |

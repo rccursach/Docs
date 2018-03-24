@@ -102,10 +102,14 @@ pages:
       - Blade: cms/themes/blade.md
       - Pages and Blocks: cms/themes/pages_and_blocks.md
       - Publishing: cms/themes/publishing.md
-  # - Commerce:
-  #   - Getting Started: commerce/index.md
-  # - CLI:
-  #   - Getting Started: cli/index.md
+  - Commerce:
+    - Getting Started: commerce/index.md
+    - Config: commerce/config.md
+    - Logistic Service: commerce/logistics.md
+    - Extending: commerce/extending.md
+  - CLI:
+    - Getting Started: cli/index.md
+    - Commands: cli/commands.md
   - Others:
     - CRUD Maker: others/crud.md
     - Crypto: others/crypto.md
