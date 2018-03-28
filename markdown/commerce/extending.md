@@ -1,5 +1,13 @@
 # Getting Started
 
+JavaScript files:
+
+shop.js
+change Store URL if you want
+
+
+
+
 ## A remarkably simple e-commerce solution.
 
 ## Introduction

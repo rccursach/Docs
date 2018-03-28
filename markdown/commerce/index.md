@@ -28,7 +28,11 @@ Laravel\Cashier\CashierServiceProvider::class,
 
 Add the following to your `app/Http/Kernel.php` to the `routeMiddleware` array:
 ```
-'isAjax' => \Grafite\Grafite Commerce\Middleware\isAjax::class,
+'isAjax' => \Grafite\Commerce\Http\Middleware\isAjax::class,
+```
+
+```
+use hasFavorites;
 ```
 
 Add the following to your `app/Providers/RouteServiceProvider.php` to the `mapWebRoutes` method inside the group method as a closure:

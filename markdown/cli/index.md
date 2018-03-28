@@ -13,6 +13,6 @@ composer global require grafite/cli
 With this installed you have the freedom to spin up a collection of apps using the various Grafite packages.
 
 ```
-$ grafite make:app {APP_NAME} --bootstrap --saas
-$ grafite make:cms {WEBSITE_NAME} --e-commerce
+$ grafite make:app {APP_NAME} --bootstrap
+$ grafite make:cms {WEBSITE_NAME}
 ```
