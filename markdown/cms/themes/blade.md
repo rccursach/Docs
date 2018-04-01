@@ -7,7 +7,12 @@ You can always add the <code>cms-frontend::</code> namespace to the <code>&#64;i
 
 ### &#64;block('slug')
 
-Create unique and elegant designs with block directives in your templates for pages.
+Create unique and elegant designs with block directives in your templates for pages and blogs.
+
+!!! Warning
+    With the block blade directive you do not specify the module it needs to load, it determines that from the first string in the request URL.
+    It will default to page if no matching module name matches the URL. In the case of something like `events`, it expects the variable in the template
+    to be `$event`. It is wrapped in the `optional` method to protect the view from breaking the app.
 
 ### &#64;menu('slug')
 
