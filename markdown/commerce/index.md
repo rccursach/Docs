@@ -1,12 +1,14 @@
 # Getting Started
 
-## A remarkably simple e-commerce solution.
-
-## Introduction
+<div class="logo">
+    <span class="commerce-icon"></span>
+</div>
 
 Obviously everyone likes to develop custom modules for their apps, and we all love the idea of selling stuff to make some extra cash on the side. Therefore, we're introducing Grafite Commerce. So you decided to start a blog or a website featuring your hobby or whatever, and now you're looking to make some sales. Simply pull in the Grafite Commerce package and within minutes you'll have a e-commerce platform up and running. Stylize it as much or as little as you want, set up some custom shipping and tracking number details, set your shipping rates and poof you've got a store.
 
 Grafite Commerce is built in a way that allows for maximum customization with considerable simplicity in upgrading as time goes on. Initial publication will provide you with the controllers and a `StoreLogistics` service that you can hook your custom code into. The entire system is built using **Stripe** for very obvious reasons.
+
+---
 
 ## Installation
 
@@ -31,8 +33,9 @@ Add the following to your `app/Http/Kernel.php` to the `routeMiddleware` array:
 'isAjax' => \Grafite\Commerce\Http\Middleware\isAjax::class,
 ```
 
+Add the following trait to the `app/Modules/UserModel.php`:
 ```
-use hasFavorites;
+use Grafite\Commerce\Services\Concerns\hasFavorites;
 ```
 
 Add the following to your `app/Providers/RouteServiceProvider.php` to the `mapWebRoutes` method inside the group method as a closure:
@@ -42,7 +45,7 @@ require base_path('routes/commerce.php');
 
 Don't worry about the laravel cashier installation, the only points of interest are specified below:
 
-Add the following to your `config/services.php`:
+Change your `config/services.php` to match the following:
 
 ```php
 'stripe' => [
@@ -81,49 +84,5 @@ views/
         settings.blade.php
 ```
 
-## Config
-
-## Quarx & Laracogs
-Grafite Commerce is intented to be used with Quarx so use outside of that context is to be done at your own risk. Similarly, though Quarx is able to be added to any existing Laravel 5.3+ application, the documentation above is in relation to using the `php artisan quarx:setup` command, which is heavily integrated with [Laracogs](https://laracogs.com).
-
-#### CURRENCY
-You can set the currency in the module `config.php` file. It is set to use an env setting `CURRENCY` but pending on your deployment this may not work correctly, and may need to be set manually.
-
-## Customizing
-
-Grafite Commerce is intented to be heavily customized per use. The general structure can support stores that sell digital and physical products, and integrate shipping management. But it can also be used to handle subscriptions. This means you can set up an instance of Grafite Commerce to handle subscriptions which produce orders which are shipped and tracked for your customers.
-
-### LogisticService
-
-The logistic service is published to your app specifically. The intention is for it to handle 'hooks' on the various events that occur within your store flow. The `LogisticService` handles the following events:
-
-```php
-shipping($user)
-getTaxPercent($user)
-afterPurchase($user, $transaction, $cart, $result)
-afterSubscription($user, $plan)
-afterRefundRequest($transaction)
-afterRefund($transaction)
-cancelSubscription($user, $plan)
-afterPlaceOrder($user, $transaction, $cart)
-orderCreated($order)
-shipOrder($order)
-cancelOrder($order)
-```
-
-### Routes & Controllers
-
-There are a few controllers added to your app in the Grafite Commerce directory. These are general controllers which you may wish to customize based on your app's setup. This is similar to Quarx in the sense that you may wish to change certain parts. Be very mindful of how much you can impact the functionality of the Grafite Commerce store base by changing these files. Routes, however, are set in the package and the Grafite CommerceRoutesProvider handles them.
-
-### Views
-
-There are Grafite Commerce view files that are published your app which you can modify, however, if you wish to edit the package views then you will need to update them in the `resources/quazar` directory.
-
-## Admin UI
-
-There are some very easy to use Admin components set up with Grafite Commerce but feel free to clone the repo and add as you please. Here are some quick screenshots.
-
-<img src="/img/quazar/screen-3.jpg" alt="">
-<img src="/img/quazar/screen-4.jpg" alt="">
-<img src="/img/quazar/screen-5.jpg" alt="">
-<img src="/img/quazar/screen-6.jpg" alt="">
+## Notes on Grafite CMS & Builder
+Grafite Commerce is intented to be used with Grafite CMS so use outside of that context is to be done at your own risk. Similarly, though Grafite CMS is able to be added to any existing Laravel 5.6+ application, the documentation above is assuming you used the Grafite CMS setup command `php artisan graifte:cms` command, which is heavily integrated with [Grafite Builder](https://builder.grafite.ca). If you did not, you may have to make adjustments that are not listed here.

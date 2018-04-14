@@ -7,6 +7,8 @@
 Grafite CMS is a simple decoupled Laravel CMS. It provides numerous components that enable developers to put together powerful applications but also provide the means for people to edit the content of those powerful applications, and websites.
 Grafite CMS comes with a module builder for all your custom CMS needs, as well as a module migration and publishing tools. So if you decide to reuse some modules on future projects you can easily publish thier assets seamlessly, you can even package them into composer packages.
 
+---
+
 ## Installation
 
 Create a new Laravel application, and make a database somewhere and update the .env file.
