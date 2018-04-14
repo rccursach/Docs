@@ -18,6 +18,10 @@ Create unique and elegant designs with block directives in your templates for pa
 
 Easily add menus to your views with the menu blade directive.
 
+### &#64;modules(['modules-to-ignore'], 'link-class', 'list-item-class')
+
+Generate links to modules automatically (Bootstrap 4 by default).
+
 ### &#64;widget('slug')
 
 Add widgets to your views with the menu blade directive, just specify the SLUG.
@@ -37,6 +41,14 @@ Images will be provided as an array, and if you skip the tag then the method wil
 ### &#64;edit('module', 'id')
 
 There is also the Grafite CMS Service which can be run inside your blade views. Its as simple as {{ Cms::method() }}
+
+### &#64;markdown('content')
+
+Convert your markdown blog or page entries into HTML.
+
+### &#64;languages('link-class', 'list-item-class')
+
+Generate links for each supported lanugage in your website
 
 Helper Methods Available:
 ------
