@@ -110,22 +110,23 @@ h1, h2, .drawer .section {
 }
 
 .carbon-container {
-    width: 190px;
-    height: 160px;
+    display: block;
+    width: 160px;
+    height: 230px;
     margin-left: 16px;
     margin-bottom: 16px;
+    text-align: center;
+    border: #eee 1px dashed;
+    padding: 16px;
 }
 
-.carbon-image {
-    width: 180px;
-    height: 100px;
-    float: left;
-    background-color: #333;
+.carbon-wrap {
+    display: block;
 }
 
 .carbon-text {
-    width: 180px;
-    height: 60px;
-    float: left;
+    display: block;
     margin-top: 8px;
+    margin-bottom: 8px;
+    float: left;
 }
