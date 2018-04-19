@@ -12,6 +12,7 @@ docs_dir: 'markdown'
 site_dir: '../websites/docs.grafite.ca'
 theme:
   name: 'material'
+  custom_dir: 'theme'
   palette:
     primary: 'green'
     accent: 'grey'
