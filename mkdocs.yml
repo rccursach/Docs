@@ -74,6 +74,7 @@ pages:
   - License: license.md
   - Builder:
     - Getting Started: builder/getting_started.md
+    - Upgrade Guide: builder/upgrade.md
     - Starter: builder/starter.md
     - Bootstrap UI: builder/bootstrap.md
     - Activity: builder/activity.md
