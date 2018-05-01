@@ -68,7 +68,6 @@ pages:
   - Grafite: index.md
   - FAQ: faq.md
   - Contributing: contributing.md
-  - Upgrade Guide: upgrade_guide.md
   - Release Notes: release_notes.md
   - Screenshots: screenshots.md
   - License: license.md
