@@ -38,5 +38,4 @@ php artisan vendor:publish --provider="Yab\CrudMaker\CrudMakerProvider"
 php artisan vendor:publish --provider="Yab\FormMaker\FormMakerProvider"
 ```
 
-
 You now have Grafite Builder installed. Try out the *Starter Kit*.
