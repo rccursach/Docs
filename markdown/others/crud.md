@@ -7,6 +7,7 @@ php artisan crudmaker:new {name or snake_names}
 {--api}
 {--ui=bootstrap}
 {--serviceOnly}
+{--withBaseService}
 {--withFacade}
 {--withoutViews}
 {--migration}
@@ -41,6 +42,9 @@ These reskin your views with either of the CSS frameworks.
 
 ## Service Only
 The service only will allow you to generate CRUDs that are service layer and lower this includes: Service, Model, and Tests with the options for migrations. It will skip the Controllers, Routes, Views, etc. This keeps your code lean, and is optimal for relationships that don't maintain a 'visual' presence in your site/app such as downloads of an entity.
+
+## With Base Service
+If you opt in for this the CrudMaker will generate a BaseService which this CRUD's service will extend from. This can be handy when you want to reduce code duplication.
 
 ## With Facades
 If you opt in for Facades the CRUD will generate them, with the intention that they will be used to access the service. You will need to bind them to the app in your own providers, but you will at least have the Facade file generated.
