@@ -2,7 +2,7 @@
 
 Translations
 -----
-All too often we need translations in our sites and even our apps. Grafite CMS has got a very simple way of handling multiple languages. Trnaslations is set up so that in the config if you add any languages to the `languages` array you will be able to define custom entries for those languages.
+All too often we need translations in our sites and even our apps. Grafite CMS has got a very simple way of handling multiple languages. Translations is set up so that in the config if you add any languages to the `languages` array you will be able to define custom entries for those languages.
 
 #### Auto-Translate
 
