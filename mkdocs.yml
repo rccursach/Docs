@@ -104,6 +104,7 @@ pages:
       - Blade: cms/themes/blade.md
       - Pages and Blocks: cms/themes/pages_and_blocks.md
       - Publishing: cms/themes/publishing.md
+      - Symlink: cms/themes/symlink.md
   - Commerce:
     - Getting Started: commerce/index.md
     - Config: commerce/config.md
