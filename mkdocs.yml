@@ -81,6 +81,7 @@ pages:
     - Billing: builder/billing.md
     - Features: builder/features.md
     - Logs: builder/logs.md
+    - Queue: builder/queue.md
     - Notifications: builder/notifications.md
     - Socialite: builder/socialite.md
   - CMS:
