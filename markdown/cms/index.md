@@ -36,10 +36,10 @@ Then you can run the setup command, it will install everything it needs, run its
 Take control of your website in seconds.
 
 ```php
-php artisan grafite:cms
+php artisan grafite:cms-setup
 ```
 
-Now your done setup. Login, and start building your amazing new website!
+Now you're done setup. Login, and start building your amazing new website!
 
 You can login as an admin with the following credentials:
 

@@ -9,7 +9,7 @@ copyright: 'Copyright (c) Grafite Inc'
 
 # Documentation and theme
 docs_dir: 'markdown'
-site_dir: '../websites/docs.grafite.ca'
+site_dir: '../static_websites/docs.grafite.ca'
 theme:
   name: 'material'
   custom_dir: 'theme'
@@ -89,6 +89,7 @@ pages:
     - Config: cms/config.md
     - API: cms/api.md
     - Multilingual: cms/multilingual.md
+    - Endorsements: cms/endorsements.md
     - Upgrade Guide: cms/upgrade.md
     - Modules:
       - Introduction: cms/modules/index.md

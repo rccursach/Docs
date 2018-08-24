@@ -11,6 +11,7 @@ The general base route for all API requests is:
 | ------ | ----- |
 | blog | Blog |
 | events | Events |
+| endorsements | Endorsements |
 | faqs | FAQs |
 | files | Files |
 | images | Images |
