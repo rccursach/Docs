@@ -110,13 +110,13 @@ You can even handle some parameters such as:
 You can specifiy relationships, in order to automate a few more steps of building your CRUDs. You can set the relationship expressions like this:
 
 ```
-relation|class|name
+relation|class|column_name
 ```
 
 or something like:
 
 ```
-hasOne|App\Author|author
+hasOne|App\Author|author_id
 ```
 
 This will add in the relationships to your models, as well as add the needed name_id field to your tables. Just one more thing you don't have to worry about.
@@ -126,6 +126,13 @@ The general relationships handled by the HTML rendered are:
 hasOne
 hasMany
 belongsTo
+```
+
+Example:
+
+```
+--schema="id:increments|first,user_id:integer|unsigned,name:string(45)"
+--relationships="belongsTo|App\User|user_id"
 ```
 
 !!! warning "The CRUD currently doesn't support `belongsToMany` that is to say it does not currently create a relational table"
